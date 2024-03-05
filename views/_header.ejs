@@ -1,0 +1,41 @@
+<header>
+    <h1>ECommerce API</h1>
+    <div>
+        <h3>STEPS TO USE THE API:</h3>
+        
+        <h4>STEPS TO CREATE A NEW PRODUCT:</h4>
+        <ol>
+            <li>Start the server using `node app.js`.</li>
+            <li>Open Postman.</li>
+            <li>Set the request method to POST.</li>
+            <li>Enter `localhost:3000/products/create` as the URL.</li>
+            <li>Select the 'Body' tab below the URL field.</li>
+            <li>Choose 'x-www-form-urlencoded' from the dropdown menu.</li>
+            <li>Add 'name' and 'quantity' as keys with desired values.</li>
+            <li>Send the request.</li>
+            <li>If you receive a message confirming successful product addition, you have completed the process.</li>
+            <li>To verify, make a GET request to <a href="http://localhost:3000/products">localhost:3000/products</a>.</li>
+        </ol>
+
+        <h4>STEPS TO DELETE A PRODUCT:</h4>
+        <ol>
+            <li>Copy the object ID of the product you wish to delete.</li>
+            <li>Append the ID to `localhost:3000/products/`.</li>
+            <li>For Example: `localhost:3000/products/65e742f70518faf32899af12`</li>
+            <li>Send a DELETE request.</li>
+            <li>Upon successful deletion, you'll receive a confirmation message.</li>
+        </ol>
+
+        <h4>STEPS TO UPDATE THE QUANTITY OF A PRODUCT:</h4>
+        <ol>
+            <li>Copy the object ID of the product whose quantity you want to update.</li>
+            <li>Append the ID to `localhost:3000/products/`.</li>
+            <li>For example, the URL should look like `localhost:3000/products/65e742f70518faf32899af12`.</li>
+            <li>Select the 'Body' tab below the URL field.</li>
+            <li>Choose 'x-www-form-urlencoded' from the dropdown menu.</li>
+            <li>In key write quantity and their updated value</li>
+            <li>Send a POST request.</li>
+            <li>You should receive a message containing the updated product details.</li>
+        </ol>
+    </div>
+</header>
